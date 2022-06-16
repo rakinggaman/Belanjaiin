@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Belanjaiin Dashboard</title>
+
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/boxicons-2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="vendors/swiperjs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body style="background-color: #fdfdfd;">
+    <div class="dashboard-page">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-header mb-5">
+                    <a href="#" class="sidebar-logo fs-5 fw-bold mb-3">Belanjaiin</a>
+                    <button class="btn btn-white d-block d-md-none" type="button" onclick="sidebarMenu()">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                </div>
+
+                <div class="sidebar-menu " id="sidebarMenu">
+                    <!--Sidebar Top-->
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-home"></i> <span>Dashboard</span></i>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-transfer"></i> <span>Orders</span></i>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-group"> </i> <span>Customer</span></i>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-wallet"> </i> <span>Finance</span></i>
+                    </a>
+                    <hr class="my-3">
+                    <!--Sidebar Middle-->
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-package"> </i> <span>My Products</span></i>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-store-alt"> </i> <span>Store Settings</span></i>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-cog"> </i><span>Account Settings</span></i>
+                    </a>
+                    <hr class="my-3">
+                    <!--Sidebar Bottom-->
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-log-out-circle"> </i> <span>Log Out</span></i>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-header d-flex align-items-center justify-content-between">
+                    <h2 class="content-title">Dashboard</h2>
+                    <div class="menu-icons d-flex align-items-center gap-2">
+                        <button class="btn btn-white shadow-sm d-flex align-items-center justify-content-center">
+                            <i class="bx bx-search fs-5"></i>
+                        </button>
+                        <div class="dropdown">
+                            <button class="btn btn-white shadow-sm d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
+                                <i class="bx bx-message-alt fs-5"></i>
+                            </button>
+                            <div class="dropdown-menu p-2">
+                                <a href="#" class="dropdown-item d-flex align-items-center gap-2 p-3" style="width: max-content; ">
+                                    <img src="images/explore-image.png" width="30" height="30" class="rounded-2" style="object-fit: cover;" alt="">
+                                    <div class="message">
+                                        <h4 class="text-dark fs-6">Muhammad Rifki</h4>
+                                        <p class="text-secondary m-0">helo ges my name is ridki</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-white shadow-sm d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
+                                <i class="bx bx-bell fs-5"></i>
+                            </button>
+                            <div class="dropdown-menu p-2">
+                                <a href="#" class="dropdown-item d-flex align-items-center gap-2 p-3" style="width: max-content; ">
+                                    <img src="images/explore-image.png" width="30" height="30" class="rounded-2" style="object-fit: cover;" alt="">
+                                    <div class="message">
+                                        <h4 class="text-dark fs-6">Muhammad Rifki</h4>
+                                        <p class="text-secondary m-0">helo ges my name is ridki</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#"><img src="images/Profile Photo.png" width="50" height="50" style="object-fit: cover;" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function sidebarMenu() {
+            const sidebar = document.getElementById('sidebarMenu');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

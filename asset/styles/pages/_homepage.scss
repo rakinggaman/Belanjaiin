@@ -47,7 +47,8 @@
     }
 }
 
-.arrival {
+.arrival,
+.products {
     .card {
         .product-image {
             height: 215px;
@@ -71,6 +72,11 @@
                 font-size: $body_small_size;
                 color: $gray_color;
             }
+        }
+        transition: .3s;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 30px rgba(62, 62, 62, 0.1);
         }
     }
 }
